@@ -2,6 +2,8 @@ Food-101
 ==============================
 
 - [Problem Statement](#problem-statement)
+  - [Previous SoTA Results](#previous-sota-results)
+  - [References](#references)
 - [Introduction](#introduction)
 - [Approach](#approach)
 - [Conclusion and Result](#conclusion-and-result)
@@ -20,7 +22,7 @@ Train a decent model >85% accuracy for top-1 for the test set, using a ResNet50 
 
 ---
 
-**Previous SoTA Results:**
+### Previous SoTA Results
 
 Following is a comparison of the previous SoTA classification results for the Food-101 dataset.
 
@@ -33,7 +35,7 @@ Following is a comparison of the previous SoTA classification results for the Fo
 
 ---
 
-**References:**
+### References
 
 [1] **Inception V3 Approach** Hassannejad, Hamid, et al. [Food image recognition using very deep convolutional networks] (https://dl.acm.org/citation.cfm?id=2986042). Proceedings of the 2nd International Workshop on Multimedia Assisted Dietary Management . ACM, 2016.
 
