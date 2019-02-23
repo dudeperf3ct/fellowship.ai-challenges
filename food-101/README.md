@@ -75,6 +75,7 @@ We will use ResNet50 as base architecture.
 
 ![resnet50](notebooks/images/resnet-50.png "ResNet50")
 
+**Steps**
 
 - We will add transformations like brightness, contrast, zoom, etc and resize all the images to size 224 for passing to the base architecture of ResNet50.
 - Find a proper learning rate using LR Finder, an approach proposed by Leslie Smith in awesome paper [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186). To further peeking in how it works, look [here](https://sgugger.github.io/the-1cycle-policy.html), [here](http://teleported.in/posts/cyclic-learning-rate/) and [here](https://www.jeremyjordan.me/nn-learning-rate/) and [Super-Convergence paper](https://arxiv.org/abs/1708.07120) .
@@ -132,44 +133,51 @@ Blog Links:
 ---
 
 ## Project Organization
-
+    
+    ├── docs
+    │   ├── commands.rst
+    │   ├── conf.py
+    │   ├── getting-started.rst
+    │   ├── index.rst
+    │   ├── make.bat
+    │   └── Makefile
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
+    ├── Makefile
+    ├── notebooks
+    │   ├── fastai_food_101.ipynb             <- Implementation and results using fastai library
+    │   └── images
+    │       ├── food-101.jpg
+    │       └── resnet-50.png
+    ├── README.md
+    ├── references
+    ├── reports
+    │   └── figures
+    ├── requirements.txt                      <- The requirements file for reproducing the analysis environment
+    ├── setup.py
+    ├── src
+    │   ├── data
+    │   │   ├── __init__.py
     │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
+    │   ├── features
+    │   │   ├── build_features.py
+    │   │   └── __init__.py
+    │   ├── __init__.py
+    │   ├── models                            <- Scripts to train, finetune models and use trained models to make prediction
+    │   │   ├── eda.py
+    │   │   ├── find_lr_model.py
+    │   │   ├── find_lr.py
+    │   │   ├── finetune_model.py
+    │   │   ├── __init__.py
+    │   │   ├── model.py
+    │   │   ├── one_cycle_lr.py
     │   │   ├── predict_model.py
     │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization                    <- Scripts to create exploratory and results oriented visualizations
+    │       ├── __init__.py 
     │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+    ├── test_environment.py
+    └── tox.ini
+
 
 
 --------
