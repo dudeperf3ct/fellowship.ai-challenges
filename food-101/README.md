@@ -1,6 +1,7 @@
 Food-101
 ==============================
 
+- [Problem Statement](#problem-statement)
 - [Introduction](#introduction)
 - [Approach](#approach)
 - [Conclusion and Result](#conclusion-and-result)
@@ -8,11 +9,48 @@ Food-101
 - [Project Organization](#project-organization)
 
 
+## Problem Statement
 
-We will tackle this problem using two frameworks, (i) [Keras](http://keras.io/) (ii) [Fastai](https://docs.fast.ai/).
- 
- We will use fastai(*awesome library*) in this notebook.
- 
+[Food-101](https://www.vision.ee.ethz.ch/datasets_extra/food-101/) is a challenging vision problem, but everyone can relate to it. Recent SoTA is ~80% top-1, 90% top-5.  These approaches rely on lots of TTA, large networks and  even novel architectures.
+
+Train a decent model >85% accuracy for top-1 for the test set, using a ResNet50 or smaller network with a reasonable set of augmentations. 
+
+![sample image from dataset](notebooks/images/food-101.jpg "Food-101 sample images")
+
+
+---
+
+**Previous SoTA Results:**
+
+Following is a comparison of the previous SoTA classification results for the Food-101 dataset.
+
+| Model                    |  Augmentations           |  Epochs  |  Top-1 Accuracy  % |  Top-5 Accuracy %  |
+| ------------------------|----------------------------------| --------------|------------------------------|------------------------------ |
+| InceptionV3      | Flip, Rotation, Color, Zoom | 32   |                 88.28           |            96.88                 |
+|WISeR                    | Flip, Rotation, Color, Zoom |  ~ 32   |               90.27    |           98.71                   |
+| ResNet+fastai   | Optional Transformations |  16   |                 90.52           |            98.34                 |
+
+
+---
+
+**References:**
+
+[1] **Inception V3 Approach** Hassannejad, Hamid, et al. [Food image recognition using very deep convolutional networks] (https://dl.acm.org/citation.cfm?id=2986042). Proceedings of the 2nd International Workshop on Multimedia Assisted Dietary Management . ACM, 2016.
+
+[2 ] **WISeR Approach** Martinel, Niki, Gian Luca Foresti, and Christian Micheloni. [Wide-slice residual networks for food recognition](https://arxiv.org/pdf/1612.06543.pdf) . Applications of Computer Vision (WACV), 2018 IEEE Winter Conference on . IEEE, 2018.
+
+[3] **ResNet + fastai Approach** [platform.ai](https://platform.ai/blog/page/3/new-food-101-sota-with-fastai-and-platform-ais-fast-augmentation-search/) 
+
+
+
+---
+
+We will tackle this problem using two frameworks, 
+
+1. [Keras](http://keras.io/) 
+
+2. [Fastai](https://docs.fast.ai/).
+
  ---
  
  ## Introduction
