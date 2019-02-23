@@ -33,7 +33,7 @@ We have already seen a great length why **CNNs** are great at these jobs and we 
 We will use ResNet50 as base architecture.
 
 
-![resnet50](/images/resnet-50.png "ResNet50")
+![resnet50](notebooks/images/resnet-50.png "ResNet50")
 
 
 - We will add transformations like brightness, contrast, zoom, etc and resize all the images to size 224 for passing to the base architecture of ResNet50.
