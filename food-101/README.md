@@ -62,7 +62,7 @@ We will tackle this problem using two frameworks,
 This is very so ImageNet like where we had 1.2  million images to classify into 1000 categories. There we saw explosion of different architectures starting from AlexNet, ZFNet, VGG, GoogLeNet, Inception v3, ResNet, SqueezeNet, and many other Nets to tackle this problem *better than humans*.
  
 
-Now it's time to stand on shoulder of these Nets and use it to solve our classification problem into 101 food categories.
+Now it's time to *stand on shoulder of these Nets* and use it to solve our classification problem into 101 food categories.
 
 We have already seen a great length why **CNNs** are great at these jobs and we looked at many other things in [this blog](https://dudeperf3ct.github.io/cnn/mnist/2018/10/17/Force-of-Convolutional-Neural-Networks/).
 
