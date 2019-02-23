@@ -1,7 +1,5 @@
 # Select Your Challenge Problem
 
----
-
 ## One-shot Learning
 
 [Omniglot](https://github.com/brendenlake/omniglot), the “transpose” of MNIST, with 1623 character classes, each with 20 examples. 
@@ -10,13 +8,10 @@ Use background set of [30 alphabets](https://github.com/brendenlake/omniglot/blo
 
 Report one-shot classification (20-way) results using a meta learning approach like [MAML](https://arxiv.org/pdf/1703.03400.pdf).
 
----
-
 ## Image Segmentation
 
 Apply an automatic portrait segmentation model (aka image matting) to [celebrity face](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset. 
 
----
 
 ## Food-101
 
@@ -24,7 +19,6 @@ Apply an automatic portrait segmentation model (aka image matting) to [celebrity
 
 Train a decent model >85% accuracy for top-1 for the test set, using a ResNet50 or smaller network with a reasonable set of augmentations.   
 
----
 
 ## ULMFiT Sentiment 
 
