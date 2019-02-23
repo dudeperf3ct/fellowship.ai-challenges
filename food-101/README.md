@@ -155,14 +155,7 @@ Blog Links:
     ├── requirements.txt                      <- The requirements file for reproducing the analysis environment
     ├── setup.py
     ├── src
-    │   ├── data
-    │   │   ├── __init__.py
-    │   │   └── make_dataset.py
-    │   ├── features
-    │   │   ├── build_features.py
-    │   │   └── __init__.py
-    │   ├── __init__.py
-    │   ├── models                            <- Scripts to train, finetune models and use trained models to make prediction
+    │   ├── models                            <- Keras Scripts to train, finetune models and make predictions
     │   │   ├── eda.py
     │   │   ├── find_lr_model.py
     │   │   ├── find_lr.py
@@ -172,7 +165,7 @@ Blog Links:
     │   │   ├── one_cycle_lr.py
     │   │   ├── predict_model.py
     │   │   └── train_model.py
-    │   └── visualization                    <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization                    <- Keras Scripts to create exploratory visualizations
     │       ├── __init__.py 
     │       └── visualize.py
     ├── test_environment.py
