@@ -9,6 +9,7 @@ Food-101
 - [Conclusion and Result](#conclusion-and-result)
 - [Improvements](#improvements)
 - [Project Organization](#project-organization)
+- [Test Images Results](#test-images-results)
 
 
 ## Problem Statement
@@ -189,3 +190,16 @@ Blog Links:
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+---
+
+## Test Images Results
+
+Test Image            |  Predictions
+---------------------------|---------------------------
+![test_1](data/test/test_1.jpg "Test_1")  | ![prediction_1](data/results/result_test_1.png "Prediction_1")
+![test_2](data/test/test_2.jpg "Test_2")  | ![prediction_2](data/results/result_test_2.png "Prediction_2")
+![test_3](data/test/test_3.jpg "Test_3")  | ![prediction_3](data/results/result_test_3.png "Prediction_3")
+![test_4](data/test/test_4.jpg "Test_4")  | ![prediction_4](data/results/result_test_4.png "Prediction_4")
+![test_5](data/test/test-5.jpg "Test_5")  | ![prediction_5](data/results/result_test-5.png "Prediction_5")
+
