@@ -133,7 +133,15 @@ Blog Links:
 ---
 
 ## Project Organization
-    
+    .
+    ├── data    
+    │   └── test       
+    │       └── test                          <- Sample test images
+    │           ├── test_1.jpg
+    │           ├── test_2.jpg
+    │           ├── test_3.jpg
+    │           ├── test_4.jpg
+    │           └── test-5.jpg
     ├── docs
     │   ├── commands.rst
     │   ├── conf.py
