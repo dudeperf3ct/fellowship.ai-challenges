@@ -214,7 +214,7 @@ Link:
     ├── Makefile
     ├── notebooks
     │   ├── fastai_food_101.ipynb             <- Implementation and results using fastai library
-    │   ├── keras_food_101.ipynb             <- Implementation and results using fastai library    
+    │   ├── keras_food_101.ipynb             <- Implementation and results using keras library    
     │   └── images
     │       ├── food-101.jpg
     │       └── resnet-50.png
