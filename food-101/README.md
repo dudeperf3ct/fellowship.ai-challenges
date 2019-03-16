@@ -53,7 +53,7 @@ We will tackle this problem using two frameworks,
 
 1. [Keras](http://keras.io/) 
 
-2. [Fastai](https://docs.fast.ai/).
+2. [Fastai](https://docs.fast.ai/)
 
  ---
  
@@ -118,7 +118,7 @@ All results obtained are using Google Colab(*thanks Google!*).
 Results can further be improved
 
 - Train longer (*as always, I need more power*)
-- Experimenting with more transformations like skewness, jitter, etc can lead to more roubstness
+- Experimenting with more transformations like skewness, jitter, etc can lead to more robustness
 
 ---
 
