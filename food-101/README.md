@@ -5,7 +5,8 @@ Food-101
   - [Previous SoTA Results](#previous-sota-results)
   - [References](#references)
 - [Introduction](#introduction)
-- [Approach](#approach)
+- [Fastai Approach](#fastai-approach)
+- [Keras Approach](#keras-approach)
 - [Conclusion and Result](#conclusion-and-result)
 - [Improvements](#improvements)
 - [Project Organization](#project-organization)
@@ -69,7 +70,7 @@ We have already seen a great length why **CNNs** are great at these jobs and we 
 
 ---
 
-## Approach
+## Fastai Approach
 
 We will use ResNet50 as base architecture.
 
@@ -121,9 +122,63 @@ Results can further be improved
 
 ---
 
+## Keras Approach
+
+We will use xception as base architecture.
+
+**Steps**
+
+- We will use xception architecture which requires 299 x 299 image size as input using `ImageDataGenerator` from keras to create training and validation data sets
+- Next, the architecture is frozen and trained for 15 epochs
+- Finetune the model and train for another 15 epochs
+
+*Simple Enough?*
+
+What result do we obtain after going through all this? Let's have a look
+
+All results obtained are using Google Colab(*thanks Google!*).
+
+
+|  Phase                       |   Time Taken (hrs)          |  Epochs  |  Top-1 Accuracy  % |  Top-5 Accuracy %  |
+| ------------------------     |----------------------------------| --------------|------------------------------|------------------------------ |
+| Freeze and Train on 299 size images  |  11 | 15   |                 38           |            66                |
+|  Unfreeze and Train on 299 size images | 9  |  15   |               55    |           79                  |
+
+
+---
+
+**Conclusion**
+
+*Phew!* 
+
+**A lot of patience** - 20 hrs (*and dealing with colab is not easy, poor connections will lead to always disconnecting and 12 hrs timeout*)
+
+**Not so Cool Classifier** - Top-1 Accuracy = 55% and Top-5 Accuracy = 79%  (Compared to Fastai results)
+
+---
+
+**Improvements**
+
+Results can further be improved
+
+- Train longer (*as always, I need more power*)
+- Ways to reduce overfitting .. hmm regularization, different architecture Inception or ResNet ... maybe.
+
+---
+
+**Plots**
+
+
+![Acc](notebooks/images/acc.png "acc") ![Loss](notebooks/images/loss.png "loss")
+
+![Finetune Acc](notebooks/images/ft_acc.png "ft acc") ![Finetune Loss](notebooks/images/ft_loss.png "ft loss")
+
+
+---
+
 *Don't forget to check out the blog in case you need a refresher on CNN, Transfer Learning and Visualizing CNN.*
 
-Blog Links: 
+Link: 
 
 [1] [CNNs](https://dudeperf3ct.github.io/cnn/mnist/2018/10/17/Force-of-Convolutional-Neural-Networks/).
 
@@ -159,9 +214,14 @@ Blog Links:
     ├── Makefile
     ├── notebooks
     │   ├── fastai_food_101.ipynb             <- Implementation and results using fastai library
+    │   ├── keras_food_101.ipynb             <- Implementation and results using fastai library    
     │   └── images
     │       ├── food-101.jpg
     │       └── resnet-50.png
+    │       └── loss.png
+    │       └── acc.png
+    │       └── ft_loss.png    
+    │       └── acc_loss.png    
     ├── README.md
     ├── references
     ├── reports
