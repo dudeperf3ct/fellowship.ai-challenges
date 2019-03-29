@@ -3,9 +3,75 @@ Transfer Learning NLP
 
 We will use transfer learning approaches in NLP like CoVe, ELMo, BERT and GPT on Twitter US Airline Dataset.
 
+Feel free to jump anywhere,
+
+- [Approach](#approach)
+  - [CoVe](#cove)
+  - [ELMo](#elmo)
+  - [ULMFiT](#ulmfit)
+  - [BERT](#bert)
+  - [GPT-2](#gpt-2)
+- [Results](#results)
+  - [Keras](#keras)
+  - [PyTorch](#pytorch)
+  - [Fastai](#fastai)
+  - [Flair](#flair)
+- [Project Organization](#project-organization)
 
 ## Approach
 
+
+
+### CoVe
+
+For in-depth discussion on Cove, look [here](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/#how-it-works?).
+
+**TL;DR**
+
+- Use the traditional encoder-decoder architecture used in seq2seq learning, to learn the context of words by giving input GLoVe embedding of words in sentence to encoder and two stacked BiLSTM layers generate output is hidden vector or context vectors.
+- We looked at one specific example of MT, where encoder was used to generate context vectors, and this context vectors along with attention mechanism (which gives context-adjusted state as output) to give target langauge output sentence using decoder.
+
+### ELMo
+
+For in-depth discussion on ELMo, look [here](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/#how-it-works?).
+
+**TL;DR**
+
+- Different words carry different meaning depending on context and so their embeddings should also take context in account.
+- ELMo trains a bidirectional LM, and extract the hidden state of each layer for the input sequence of words.
+- Then, compute a weighted sum of those hidden states to obtain an embedding for each word. The weight of each hidden state is task-dependent and is learned.
+- This learned ELMo embedding in used in specific downstream tasks for which embedding is obtained.
+
+### ULMFiT
+
+For in-depth discussion on ULMFiT, look [here](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/#how-it-works?).
+
+**TL;DR**
+
+- CV transfer learning style training. Create a pretrained language model by training on large corpus like Wikitext-103, etc.
+- Finetune LM data on target data and to stabalize this finetuning two methods like Discriminative finetuning and Slanted learning rates are used.
+- To finetune on target task classifier using above finetune LM, additional linear model is added to language model architecture such as concat pooling is added and gradual unfreezing is used.
+
+
+### BERT
+
+For in-depth discussion on BERT, look [here](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/#how-it-works?).
+
+**TL;DR**
+
+- Use large corpus of unlabeled data to learn a language model(which captures semantics, etc of language) by training on two tasks: Masked Language Model and Next Sentence Prediction using a multi-layer bidirectional Transformer Encoder architecture.
+- Finetuning pretrained language model for specific downstream tasks, task-specific modifications are done.
+
+
+### GPT-2
+
+For in-depth discussion on GPT-2, look [here](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/#how-it-works?).
+
+**TL;DR**
+
+- Large and diverse amount data is enough to capture language semantics related to different tasks instead of training a language model for seperate tasks.
+- Pretrained lanaguage model does excellent job on various tasks such as question answering, machine translation, summarization and especially text generation without having to train explicitly for each particular tasks. No task-specific finetuning required.
+- GPT-2 achieves mind blowing results just through pretrained language model.
 
 ## Result
 
@@ -144,10 +210,11 @@ neutral    tp: 182 - fp: 116 - fn: 100 - tn: 1066 - precision: 0.6107 - recall: 
 positive   tp: 182 - fp: 71 - fn: 40 - tn: 1171 - precision: 0.7194 - recall: 0.8198 - accuracy: 0.6212 - f1-score: 0.7663
 
 
+---
 
 
+## Project Organization
 
-Project Organization
 ------------
 
         .
