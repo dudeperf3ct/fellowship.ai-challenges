@@ -3,6 +3,8 @@ Transfer Learning NLP
 
 We will use transfer learning approaches in NLP like CoVe, ELMo, BERT and GPT on Twitter US Airline Dataset.
 
+Blog: [Power of Transfer Learning in NLP](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/)
+
 Feel free to jump anywhere,
 
 - [Approach](#approach)
