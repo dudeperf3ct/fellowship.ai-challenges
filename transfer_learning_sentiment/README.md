@@ -1,7 +1,7 @@
 Transfer Learning NLP
 ==============================
 
-We will use transfer learning approaches in NLP like CoVe, ELMo, BERT and GPT on Twitter US Airline Dataset.
+We will use transfer learning approaches in NLP like CoVe, ELMo, BERT and GPT on Twitter US Airline Dataset using 5 frameworks [Keras](https://keras.io/), [PyTorch](http://pytorch.org/tutorials/), [fastai](http://docs.fast.ai/), [flair](https://github.com/zalandoresearch/flair/) and [allennlp](https://github.com/allenai/allennlp/tree/master/allennlp).
 
 Blog: [Power of Transfer Learning in NLP](https://dudeperf3ct.github.io/nlp/transfer/learning/2019/02/22/Power-of-Transfer-Learning-in-NLP/)
 
@@ -21,7 +21,6 @@ Feel free to jump anywhere,
 - [Project Organization](#project-organization)
 
 ## Approach
-
 
 
 ### CoVe
