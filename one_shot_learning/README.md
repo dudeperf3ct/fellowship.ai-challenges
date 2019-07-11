@@ -1,6 +1,8 @@
 Meta Learning
 ==============================
 
+Blog: [Fun of Dissecting Paper](https://dudeperf3ct.github.io/meta/learning/2019/04/29/Fun-of-Dissecting-Paper/)
+
 Challenge will be to implement 3 algorithms from the paper [A Closer Look at Few-shot Classification](https://openreview.net/pdf?id=HkxLXnAcFQ). We will implement baseline, baseline++ and MAML algorithms using Omniglot dataset and try to replicate the results shown in the paper.
 
 <p align="center">
