@@ -4,7 +4,7 @@
 Challenge will be to implement 3 algorithms from the paper [A Closer Look at Few-shot Classification](https://openreview.net/pdf?id=HkxLXnAcFQ). We will implement baseline, baseline++ and MAML algorithms using Omniglot dataset and try to replicate the results shown in the paper.
 
 <p align="center">
-<img src='/notebooks/meta_learning/results_total.png' width="50%"/> 
+<img src='notebooks/meta_learning/results_total.png' width="50%"/> 
 </p>
 
 Project Organization
